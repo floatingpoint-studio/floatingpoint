@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Montserrat:wght@800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+    margin-top: 20px;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left{
+    margin: 5px 0 0 20px ;
+    height: 30%;
+    width: 20%;
+}
+.logo{
+    object-fit: cover;
+    width:100%;
+}
+
+.menu-btn {
+    position: absolute;
+    top:-3px;
+    right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger {
+  width: 25px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: rgb(0, 0, 0);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255,101,47,.2);
+  transition: all .5s ease-in-out;
+}
+
+
+.menu-btn__burger::before {
+  transform: translateY(-10px);
+}
+
+
+.menu-btn__burger::after {
+  transform: translateY(10px);
+}
+
+
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    margin-top: 30px;
+
+}
+
+.homebg{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.maintext{
+    position: absolute;
+    height: 25vh;
+    width: 70vw;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 49px;
+}
+
+.bigsubtext{
+    color: #376F7A;
+    font-size: 1.5em;
+}
+
+.infocontainterparent{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 20vh;
+    margin-top: 10vh;
+}
+
+.infocontainer{
+    background-color:rgba(137, 197, 204, 0.43);
+    width: 89vw;
+    height: 20vh;
+    border-radius: 16px;
+}
+
+.infoheading{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 17px;
+}
+
+.infodescription{
+    position: relative;
+    width:90%;
+    top: 30px;
+    left: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 16px;
+
+    letter-spacing: 0.01em;
+}
+
+.build-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    width: 107px;
+    height: 36px;
+
+    background: #69A1AC;
+    border-radius: 12px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+
+}
+
+.iconholder{
+    position: relative;
+    left: 180px;
+    width: 35%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.iconone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+/* /shadow/lg */
+
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+border-radius: 32px;
+    width: 44px;
+height: 44px;
+}
+
+.icontwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+/* /shadow/lg */
+
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -2px rgba(0, 0, 0, 0.05);
+border-radius: 32px;
+    width: 44px;
+height: 44px;
+}
+
+.icons{
+    object-fit: cover;
+    height: 80%;
+}
+
+
+
+
+
