@@ -101,9 +101,10 @@ nav{
 }
 
 .homebg{
-    object-fit: contain;
+    position: absolute;
     height: 100%;
-    width: 100%;
+    width: 60%;
+    left:208px;
 }
 
 .maintext{
@@ -113,13 +114,14 @@ nav{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 3em;
-    line-height: 49px;
+    font-size: 2.3em;
+    line-height: 43px;
+    left:34px;
 }
 
 .bigsubtext{
     color: #376F7A;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 .infocontainterparent{
@@ -133,7 +135,7 @@ nav{
 .infocontainer{
     background-color:rgba(137, 197, 204, 0.43);
     width: 89vw;
-    height: 20vh;
+    height: 24vh;
     border-radius: 16px;
 }
 
@@ -168,7 +170,7 @@ nav{
     align-items: center;
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 72px;
     left: 20px;
     width: 107px;
     height: 36px;
@@ -188,12 +190,13 @@ nav{
 .iconholder{
     position: relative;
     left: 180px;
-    width: 35%;
+    width: 30%;
     height: 35%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    top:24px
 }
 
 .iconone{
