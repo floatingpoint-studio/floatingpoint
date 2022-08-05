@@ -10,6 +10,7 @@ body {
     margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 nav{
@@ -20,6 +21,42 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
+
+.navbox{
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: -100%;
+  height: 35%;
+  width: 100%;
+  background-color: #89c5cc;
+  transition: top 0.5s ease-in-out;
+}
+.navicons{
+  height: 15px;
+  margin-right: 10px;
+}
+
+.show{
+  top:0;
+  z-index: 7;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbuttons{
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1em;
+    line-height: 43px;
+    left:34px;
+  list-style: none;
+  padding:15px;
+}
+
 
 .nav-left{
     margin: 5px 0 0 20px ;
@@ -32,6 +69,7 @@ nav{
 }
 
 .menu-btn {
+  z-index: 10;
     position: absolute;
     top:-3px;
     right: 15px;
@@ -101,10 +139,19 @@ nav{
 }
 
 .homebg{
-    position: absolute;
+    /* position: absolute; */
+    object-fit: cover;
     height: 100%;
-    width: 60%;
-    left:208px;
+    /* width: 60%;
+    left:208px; */
+}
+
+.homebgcontainer{
+  height: 25%;
+  width: 50%;
+  position: absolute;
+  left:208px;
+  overflow: hidden;
 }
 
 .maintext{
@@ -133,7 +180,7 @@ nav{
 }
 
 .infocontainer{
-    background-color:rgba(137, 197, 204, 0.43);
+    background-color:#89c5cc6e;
     width: 89vw;
     height: 24vh;
     border-radius: 16px;
