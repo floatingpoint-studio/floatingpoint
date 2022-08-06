@@ -148,7 +148,7 @@ nav{
 
 .homebgcontainer{
   height: 25%;
-  width: 50%;
+  width: 45%;
   position: absolute;
   left:208px;
   overflow: hidden;
@@ -184,6 +184,7 @@ nav{
     width: 89vw;
     height: 24vh;
     border-radius: 16px;
+    position: relative;
 }
 
 .infoheading{
@@ -216,8 +217,8 @@ nav{
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
-    top: 72px;
+    position: absolute;
+    /* top: 72px; */
     left: 20px;
     width: 107px;
     height: 36px;
@@ -231,11 +232,11 @@ nav{
     font-size: 12px;
     line-height: 15px;
     color: #FFFFFF;
-
+    bottom: 21px;
 }
 
 .iconholder{
-    position: relative;
+    position: absolute;
     left: 180px;
     width: 30%;
     height: 35%;
@@ -243,7 +244,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    top:24px
+    /* top:24px */
+    bottom: 0px;
 }
 
 .iconone{
