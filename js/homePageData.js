@@ -13,6 +13,12 @@ const data = [
     more_desc: "Build with us",
     img: ["./assets/flutter.png", "./assets/kotlin.png"],
   },
+  {
+    title: "Graphics Designing",
+    desc: "Graphics",
+    more_desc: "Build with us",
+    img: ["./assets/figma.png", "./assets/photoshop.png"],
+  }
 ]
 
 let str = ""
