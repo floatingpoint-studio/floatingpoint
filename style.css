@@ -5,12 +5,11 @@
   box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 nav{
@@ -20,6 +19,15 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav-logo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px 10px 0px;
 }
 
 .navbox{
@@ -48,15 +56,14 @@ nav{
 
 .navbuttons{
   font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 1em;
-    line-height: 43px;
-    left:34px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1em;
+  line-height: 43px;
+  left:34px;
   list-style: none;
   padding:15px;
 }
-
 
 .nav-left{
     margin: 5px 0 0 20px ;
@@ -70,9 +77,9 @@ nav{
 
 .menu-btn {
   z-index: 10;
-    position: absolute;
-    top:-3px;
-    right: 15px;
+  position: absolute;
+  top:-3px;
+  right: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,7 +98,6 @@ nav{
   transition: all .5s ease-in-out;
 }
 
-
 .menu-btn__burger::before,
 .menu-btn__burger::after {
   content: '';
@@ -104,98 +110,119 @@ nav{
   transition: all .5s ease-in-out;
 }
 
-
 .menu-btn__burger::before {
   transform: translateY(-10px);
 }
 
-
 .menu-btn__burger::after {
   transform: translateY(10px);
 }
-
-
 
 .menu-btn.open .menu-btn__burger {
   transform: translateX(-50px);
   background: transparent;
   box-shadow: none;
 }
+
 .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg) translate(35px, -35px);
 }
+
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .home{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 20vh;
-    margin-top: 60px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  margin-top: 20px;
 }
 
 .homebg{
-    /* position: absolute; */
-    object-fit: cover;
-    height: 100%;
-    /* width: 60%;
-    left:208px; */
+  object-fit: cover;
+  height: 100%;
 }
 
 .homebgcontainer{
   height: 25%;
   width: 45%;
   position: absolute;
-  left:208px;
+  left: 208px;
   overflow: hidden;
 }
 
 .maintext{
-    position: absolute;
-    height: 25vh;
-    width: 70vw;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 2.3em;
-    line-height: 43px;
-    left:34px;
+  position: relative;
+  height: 25vh;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 2.3em;
+  line-height: 43px;
+  margin-bottom: 5rem;
+}
+
+.maintext::before{
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3;
+  width: 100%;
+  height: 37vh;
+  background-image: url("./assets/Website_Creator-bro.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text {
+  margin-left: 20%;
+  margin-top: 70px;
+}
+
+.subtext {
+  position: relative;
 }
 
 .bigsubtext{
+  position: relative;
     color: #376F7A;
     font-size: 1.2em;
 }
 
 .contact-form{
   width:90%;
-  margin:20px auto; 
-height: 470px;
-border-radius: 15px;
-font-family: 'Montserrat' ;
+  margin:20px auto;
+  border-radius: 15px;
+  font-family: 'Montserrat';
+  background-color: #89c5cc6e;
+  padding: 15px 0px;
 }
+
 .m-auto-cont {
-  width:80%;
-  margin:auto;
+  width: 90%;
+  margin: auto;
   height: 100%;
 }
+
 #cards{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: auto;
-  margin-top: 50px;
-  margin-bottom: 60px;
-
+  margin-top: 20px;
 }
+
 .form-container {
   width:100%;
 }
+
 .form-container .form input{
   display: block;
   width: 100%;
@@ -203,19 +230,10 @@ font-family: 'Montserrat' ;
   height: 48px;
   outline: none;
   border :1px solid #dbd8d8;
-  color:#dbd8d8;
   padding:5px 10px;
   border-radius: 7px;
 }
-.contact-img {
-  width:100%;
-  display: flex;
-  align-items: center;
-}
-.contact-img img{
-  margin : 20px auto;
-  display: block;
-}
+
 .form-heading {
   text-align: center;
 }
@@ -226,12 +244,6 @@ font-family: 'Montserrat' ;
   outline:none;
   border:none;
   color:white;
-  background-color: blue;
+  background-color: #376F7A;
   border-radius: 7px;
 }
-
-
-
-
-
-
