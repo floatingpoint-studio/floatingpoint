@@ -10,13 +10,13 @@ const data = [
   {
     title: "App Development",
     desc: "Apps",
-    more_desc: "Build with us",
+    more_desc: "Deploy with us",
     img: ["./assets/flutter.png", "./assets/kotlin.png", "./assets/android.png", "./assets/swift.png", "./assets/firebase.png", "./assets/androidstudio.png" ],
   },
   {
     title: "Graphics Designing",
     desc: "Graphics",
-    more_desc: "Build with us",
+    more_desc: "Design with us",
     img: ["./assets/figma.png", "./assets/photoshop.png", "./assets/after effects.png", "./assets/adobe xd.png" , "./assets/adobe premiere pro.png", "./assets/adobe illustrator.png"],
   }
 ]
