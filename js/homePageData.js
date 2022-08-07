@@ -29,8 +29,8 @@ data.forEach((item) => {
     <div class="infoheading">${item.title}</div>
     <div class="infodescription">${item.desc}</div>
     <div class="build-button"><span class="build text">${item.more_desc}</span></div>
-      <div class="iconholder"><div class="iconone"><img src=${item.img[0]}  alt="" class="icons"></div>
-      <div class="icontwo"><img src=${item.img[1]} alt="" class="icons"></div></div>
+      <div class="iconholder"><div class="iconchild"><img src=${item.img[0]}  alt="" class="icons"></div>
+      <div class="iconchild"><img src=${item.img[1]} alt="" class="icons"></div></div>
   </div>
 </div>`
 })
