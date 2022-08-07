@@ -24,7 +24,7 @@ const data = [
 let str = ""
 
 data.forEach((item) => {
-  str += `<div class="infocontainterparent">
+  str += `
   <div class="infocontainer">
     <div class="infoheading">${item.title}</div>
     <div class="infodescription">${item.desc}</div>
@@ -32,7 +32,7 @@ data.forEach((item) => {
       <div class="iconholder"><div class="iconchild"><img src=${item.img[0]}  alt="" class="icons"></div>
       <div class="iconchild"><img src=${item.img[1]} alt="" class="icons"></div></div>
   </div>
-</div>`
+`
 })
 
 cards.innerHTML = str
