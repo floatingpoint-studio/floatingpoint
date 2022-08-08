@@ -2,19 +2,21 @@ let cards = document.getElementById('cards')
 
 const data = [
   {
-    title: "WEB",
-    desc: "Websites",
+    title: "Web",
+    desc: `“Websites promote you 24/7: No employee will do that.”
+    <br><span class="rightalign">Paul Cookson</span>
+    <br>Let us help you build websites that SELL!`,
     moredes: "Build with us",
     img: ["./assets/react-icon.png", "./assets/mongodb.png" , "./assets/html.png", "./assets/css.png", "./assets/nodejs.png" , "./assets/wordpress.png"],
   },
   {
-    title: "APP",
+    title: "App",
     desc: "Apps",
     moredes: "Deploy with us",
     img: ["./assets/flutter.png", "./assets/kotlin.png", "./assets/android.png", "./assets/swift.png", "./assets/firebase.png", "./assets/androidstudio.png" ],
   },
   {
-    title: "GRAPHICS",
+    title: "Graphics",
     desc: "Graphics",
     moredes: "Design with us",
     img: ["./assets/figma.png", "./assets/photoshop.png", "./assets/after effects.png", "./assets/adobe xd.png" , "./assets/adobe premiere pro.png", "./assets/adobe illustrator.png"],

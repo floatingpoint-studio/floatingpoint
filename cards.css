@@ -1,5 +1,4 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;600&display=swap');
 .infocontainer{
     display: flex;
     flex-direction: column;
@@ -22,24 +21,31 @@
 }
 
 .infoheading{
+    margin-top: 10px;
+    margin-left: 10px;
     padding: 5px;
-    font-family: 'Inter';
+     font-family: 'Montserrat Alternates', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.5em;
     line-height: 17px;
 }
 
 .infodes{
-    margin-left: 3px;
+  margin-top: 1px;
+  margin-left: 12px;
     padding: 5px;
-    font-family: 'Inter';
+    font-family: 'Montserrat Alternates', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 1em;
     line-height: 16px;
 
     letter-spacing: 0.01em;
+}
+
+.rightalign{
+  width: 100%;
 }
 
 .btnandicons{
@@ -102,7 +108,7 @@
 }
 
 .iconsmarquee{
-  margin-left: 10px;
+  margin-left: 15px;
   overflow: hidden;
   display: flex;
   flex-shrink: 0;
