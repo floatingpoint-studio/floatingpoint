@@ -2,18 +2,21 @@ let cards = document.getElementById('cards')
 
 const data = [
   {
-    title: "Deploy wih us",
+    title: "WEB",
     desc: "Websites",
+    moredes: "Build with us",
     img: ["./assets/react-icon.png", "./assets/mongodb.png" , "./assets/html.png", "./assets/css.png", "./assets/nodejs.png" , "./assets/wordpress.png"],
   },
   {
-    title: "Build with us",
+    title: "APP",
     desc: "Apps",
+    moredes: "Deploy with us",
     img: ["./assets/flutter.png", "./assets/kotlin.png", "./assets/android.png", "./assets/swift.png", "./assets/firebase.png", "./assets/androidstudio.png" ],
   },
   {
-    title: "Design with us",
+    title: "GRAPHICS",
     desc: "Graphics",
+    moredes: "Design with us",
     img: ["./assets/figma.png", "./assets/photoshop.png", "./assets/after effects.png", "./assets/adobe xd.png" , "./assets/adobe premiere pro.png", "./assets/adobe illustrator.png"],
   }
 ]
@@ -28,6 +31,7 @@ data.forEach((item) => {
           <p class="infodes">${item.desc}</p>
       </div>
       <div class="btnandicons">
+      <button class="buildbtn">${item.moredes}</button>
         <div class="iconsmarquee">
             <div class="marqueeholder">
                 <div class="iconholder"><img src="${item.img[0]}" alt="" class="icons"></div>

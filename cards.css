@@ -1,72 +1,87 @@
+
+
 .infocontainer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 16px;
-  background-color: #89c5cc6e;
-  width: 90%;
-  height: 12em;
-  position: relative;
-  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 16px;
+    background-color: #89c5cc6e;
+    width: 90%;
+    height: 12em;
+    position: relative;
+    margin-top: 20px;
 }
 
 .textholder{
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width:95%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:95%;
 }
 
 .infoheading{
-  padding: 5px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
-  font-size: 1.5em;
-  line-height: 17px;
+    padding: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 1.5em;
+    line-height: 17px;
 }
 
 .infodes{
-  margin-left: 3px;
-  padding: 5px;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 16px;
-  letter-spacing: 0.01em;
+    margin-left: 3px;
+    padding: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 16px;
+
+    letter-spacing: 0.01em;
 }
 
 .btnandicons{
-  overflow: hidden;
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  bottom:15px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* background-color: coral; */
+    width: 93%;
+    bottom:15px;
+    overflow: hidden;
 }
 
 .buildbtn{
-  display: flex;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 107px;
-  height: 36px;
+  margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+    align-items: center;
+    text-align: center;
+    width: 107px;
+    height: 36px;
 
-  background: #69A1AC;
-  border-radius: 12px;
+    background: #69A1AC;
+    border-radius: 12px;
 
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  bottom: 21px;
-  border: 1px solid #69A1AC;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    bottom: 21px;
+    border: 1px solid #69A1AC;
+}
+
+
+.buildbtn:hover{
+  margin-left: 5px;
+  background-color: #148091;
+  
 }
 
 .iconholder{
@@ -87,6 +102,7 @@
 }
 
 .iconsmarquee{
+  margin-left: 10px;
   overflow: hidden;
   display: flex;
   flex-shrink: 0;
