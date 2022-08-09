@@ -1,56 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-      <script type="text/javascript">
-          (function() {
-              emailjs.init('1YfX1bf10CDgws1ZY');
-          })();
-      </script>
-      <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-us-form').addEventListener('submit', function(event) {
-              event.preventDefault();
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('1YfX1bf10CDgws1ZY');
+        })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-us-form').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-              const message_data = {
-                "name": this.name.value,
-                "email": this.email.value,
-                "phone_number": this.phone_number.value,
-                "query": this.query.value,
-                "from_name": this.name.value,
-                "reply_to": this.email.value,
-              }
+            const message_data = {
+              "name": this.name.value,
+              "email": this.email.value,
+              "phone_number": this.phone_number.value,
+              "solution": this.solution.value,
+              "from_name": this.name.value,
+              "reply_to": this.email.value,
+            }
 
-              emailjs.send('service_x810khm', 'template_yswcf7a', message_data)
-                .then(function() {}, function(error) {
-                  console.log(error);
-                });
-            });
-        }
-      </script>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="cards.css">
-      <title>Floating Point</title>
+            emailjs.send('service_x810khm', 'template_yswcf7a', message_data)
+              .then(function() {}, function(error) {
+                console.log(error);
+              });
+          });
+      }
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./js/cards.css">
+    <title>Floating Point</title>
   </head>
   <body>
-    <!-- <div class="nav-logo">
-      <img src="assets\logo.png" height="50%" width="40%" alt="logo">
-    </div> -->
     <div class="navbox" id="navshow">
       <ul class="navlist">
-        <li class="navbuttons"><img class="navicons" src="assets\navhome.png" alt=""><a href="" style="text-decoration: none;    ">Home</a></li>
-        <li class="navbuttons"><img class="navicons" src="assets\navabout.png" alt=""><a href="" style="text-decoration: none;   ">About</a></li>
-        <li class="navbuttons"><img class="navicons" src="assets\navcontact.png" alt=""><a href="#contact" style="text-decoration: none; ">Contacts</a></li>
+        <li class="navbuttons"><img class="navicons" src="assets\navhome.png" alt=""><a href="#" style="text-decoration: none;">Home</a></li>
+        <li class="navbuttons"><img class="navicons" src="assets\navabout.png" alt=""><a href="#about" style="text-decoration: none;">About</a></li>
+        <li class="navbuttons"><img class="navicons" src="assets\navcontact.png" alt=""><a href="#contact" style="text-decoration: none;">Contacts</a></li>
       </ul>
     </div>
     <div class="nav" id="navcolour">
       <div class="nav-left">
         <img src="assets\logo.png" class="logo" alt="logo">
       </div>
-        
     </div>
     <div class="menu-btn">
       <div class="menu-btn__burger"></div>
@@ -69,28 +66,58 @@
           </p>
         </div>
       </div>
-      
     </div>
-    
-    <div id="cards">
-
-    </div>
-    <div class="contact-form" id="contact" >
+    <div id="cards"></div>
+    <div class="round-container">
       <div class="m-auto-cont">
-        <h2>Contact us</h2>
+        <h1 id="about">About Us</h1>
+        <p class="about-us">
+          We can build new digital products from grounds up, or upgrade existing ones to cope with new demands and growing user base. And we can also do it all the way down to the smallest detail. Floating Point is a team of creative and passionate people who love to create, design and develop.
+        </p>
+      </div>
+    </div>
+    <div class="round-container" id="contact" >
+      <div class="m-auto-cont">
+        <h1>Hit us up!</h1>
         <div class="form-container">
           <form action="" class="form" id="contact-us-form">
-             <input type="text" name="name" id="" placeholder="Name" required>
-             <input type="email" name="email" id="" placeholder="Email" required>
-             <input type="tel" name="phone_number" id="" placeholder="Phone number" required>
-             <input type="text" name="query" id="" placeholder="Query" required>
-             <button type="submit" class="submit-btn">
-               Submit
-             </button>
+             <p class="contact-us-text">
+                <label>Hey, my name is</label>
+                <input class="input" type="text" name="name" id="name" placeholder="your name" required>
+                , and I'm looking for
+                <input type="search" list="solutions" name="solution" id="solution" placeholder="this service" class="input" required>
+                <datalist id="solutions">
+                  <option value="Web">
+                  <option value="App">
+                  <option value="Graphic Designing">
+                </datalist>.<br> Get in touch with me at
+                <input class="input" type="email" name="email" id="email" placeholder="your email" required> and
+                <input class="input" type="tel" name="phone_number" id="phone" placeholder="your phone" required>.
+                <button type="submit" class="submit-btn">
+                  Submit
+                </button>
+              </p>
           </form>
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function() {
+        $('#name').keyup(function() {
+          $(this).attr('size', $(this).val().length)
+        });
+      });
+      $(document).ready(function() {
+        $('#phone').keyup(function() {
+          $(this).attr('size', $(this).val().length)
+        });
+      });
+      $(document).ready(function() {
+        $('#email').keyup(function() {
+          $(this).attr('size', $(this).val().length)
+        });
+      });
+    </script>
     <script src="./js/cards.js"></script>
     <script src="script.js"></script>
   </body>

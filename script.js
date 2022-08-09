@@ -3,11 +3,7 @@ const navbox = document.getElementById('navshow')
 const navbar = document.getElementById('navcolour')
 let menuOpen = false;
 
-
-
-
 menuBtn.addEventListener('click', () => {
-
   if(!menuOpen) {
     navbox.classList.add('show');
     menuBtn.classList.add('open');
@@ -20,4 +16,3 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
-

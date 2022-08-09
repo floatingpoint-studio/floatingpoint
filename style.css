@@ -22,19 +22,16 @@ body {
 .nav{
   z-index: 10;
   position: fixed;
+  top: 0;
   background-color: white;
-  /* position: sticky; */
-    /* background-color: chocolate; */
-    /* margin-top: 20px; */
-    top: 0;
-    height: auto;
-    display: flex;
-    width: 100%;
-    flex-grow: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    transition: top 0.5s ease-in-out;
+  height: auto;
+  display: flex;
+  width: 100%;
+  flex-grow: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  transition: top 0.5s ease-in-out;
 }
 
 .nav-logo {
@@ -71,7 +68,7 @@ body {
 }
 
 .navbuttons{
-  
+
   display: flex;
   align-items: center;
   font-family: 'Montserrat';
@@ -110,14 +107,12 @@ body {
   position: fixed;
   right: 20px;
   top: 0;
-  /* margin-top: 20px;
-  margin-right: 20px; */
   z-index: 15;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 10%;
-  height: 10%; 
+  height: 10%;
   cursor: pointer;
   transition: all .5s ease-in-out;
 }
@@ -231,9 +226,9 @@ body {
     font-size: 1.2em;
 }
 
-.contact-form{
-  width:90%;
-  margin:20px auto;
+.round-container{
+  width: 90%;
+  margin: 30px auto;
   border-radius: 15px;
   font-family: 'Montserrat';
   background-color: #89c5cc6e;
@@ -259,20 +254,14 @@ body {
   width:100%;
 }
 
-.form-container .form input{
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  height: 48px;
-  outline: none;
-  border :1px solid #dbd8d8;
-  padding:5px 10px;
-  border-radius: 7px;
+.about-us {
+  margin: 20px 10px;
 }
 
 .form-heading {
   text-align: center;
 }
+
 .form-container .form .submit-btn{
   width:100%;
   margin-top: 30px;
@@ -282,4 +271,29 @@ body {
   color:white;
   background-color: #376F7A;
   border-radius: 7px;
+}
+
+.form-container .form .submit-btn:hover{
+  background-color: #1d464f;
+  color: white;
+  cursor: pointer;
+}
+
+.contact-us-text {
+  padding: 0px 10px;
+  font-size: 1.2rem;
+  line-height: 40px;
+  font-family: 'Montserrat';
+}
+
+.input {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: transparent;
+  text-align: center;
+  padding: 2px 0px;;
+  outline: none;
+  border: none;
+  border-bottom: #376F7A solid 1px;
 }
