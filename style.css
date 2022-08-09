@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -59,7 +60,7 @@ body {
   transition: top 0.5s ease-in-out;
 }
 .navicons{
-  height: 15px;
+  height: 23px;
   margin-right: 10px;
 }
 
@@ -70,15 +71,25 @@ body {
 }
 
 .navbuttons{
+  
+  display: flex;
+  align-items: center;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 800;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 1.2em;
   line-height: 43px;
-  left:34px;
   list-style: none;
-  padding:15px;
+  padding:12px;
 }
+.navbuttons a{
+  color: black;
+}
+
+.navbuttons:hover{
+  filter: invert(100%);
+}
+
 
 .nav-left{
   margin-top: 25px;
