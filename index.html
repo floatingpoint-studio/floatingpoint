@@ -23,7 +23,7 @@
             }
 
             emailjs.send('service_x810khm', 'template_yswcf7a', message_data)
-              .then(function() {}, function(error) {
+              .then(function() {alert("Email sent successfully")}, function(error) {
                 console.log(error);
               });
           });
