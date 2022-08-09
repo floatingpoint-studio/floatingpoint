@@ -39,21 +39,22 @@
     <!-- <div class="nav-logo">
       <img src="assets\logo.png" height="50%" width="40%" alt="logo">
     </div> -->
-    <nav>
-      <div class="navbox" id="navshow">
-        <ul class="navlist">
-          <li class="navbuttons"><img class="navicons" src="assets\navhome.png" alt=""><a href="" style="text-decoration: none;    color: black;">Home</a></li>
-          <li class="navbuttons"><img class="navicons" src="assets\navabout.png" alt=""><a href="" style="text-decoration: none;   color: black;">About</a></li>
-          <li class="navbuttons"><img class="navicons" src="assets\navcontact.png" alt=""><a href="" style="text-decoration: none; color: black;">Contacts</a></li>
-        </ul>
-      </div>
+    <div class="navbox" id="navshow">
+      <ul class="navlist">
+        <li class="navbuttons"><img class="navicons" src="assets\navhome.png" alt=""><a href="" style="text-decoration: none;    color: black;">Home</a></li>
+        <li class="navbuttons"><img class="navicons" src="assets\navabout.png" alt=""><a href="" style="text-decoration: none;   color: black;">About</a></li>
+        <li class="navbuttons"><img class="navicons" src="assets\navcontact.png" alt=""><a href="#contact" style="text-decoration: none; color: black;">Contacts</a></li>
+      </ul>
+    </div>
+    <div class="nav" id="navcolour">
       <div class="nav-left">
         <img src="assets\logo.png" class="logo" alt="logo">
       </div>
-        <div class="menu-btn">
-          <div class="menu-btn__burger"></div>
-        </div>
-    </nav>
+        
+    </div>
+    <div class="menu-btn">
+      <div class="menu-btn__burger"></div>
+    </div>
     <div class="home">
       <div class="maintext">
         <div class="text">
@@ -74,7 +75,7 @@
     <div id="cards">
 
     </div>
-    <div class="contact-form">
+    <div class="contact-form" id="contact" >
       <div class="m-auto-cont">
         <h2>Contact us</h2>
         <div class="form-container">
@@ -90,7 +91,7 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
     <script src="./js/cards.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

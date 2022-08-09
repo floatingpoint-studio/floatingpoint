@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,500;1,400&display=swap');
 .infocontainer{
     display: flex;
     flex-direction: column;
@@ -21,7 +22,6 @@
 }
 
 .infoheading{
-    margin-top: 10px;
     margin-left: 10px;
     padding: 5px;
      font-family: 'Montserrat Alternates', sans-serif;
@@ -32,7 +32,13 @@
 }
 
 .infodes{
-  margin-top: 1px;
+  /* display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 1; */
+  height: 80%;
+  width: 95%;
+  /* margin-top: 1px; */
   margin-left: 12px;
     padding: 5px;
     font-family: 'Montserrat Alternates', sans-serif;
@@ -44,8 +50,39 @@
     letter-spacing: 0.01em;
 }
 
-.rightalign{
+.right{
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 16px;
+
+    letter-spacing: 0.01em;
+  text-align: right;
   width: 100%;
+}
+
+.infoquote{
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 16px;
+
+    letter-spacing: 0.01em;
+  width: 100%;
+}
+
+.motto{
+  font-family: 'Montserrat Alternates', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 16px;
+  text-align: justify;
+    letter-spacing: 0.01em;
+  width: 100%;
+  margin-top: 8px;
 }
 
 .btnandicons{
@@ -132,4 +169,13 @@
   gap: 15px;
   width: 100%;
   margin-left: 20%;
+}
+
+
+
+
+.modal{
+  position: fixed;
+  top: 25%;
+  left: 25%;
 }
