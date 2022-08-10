@@ -167,3 +167,14 @@
   top: 25%;
   left: 25%;
 }
+
+@media only screen and (min-width: 952px) {
+  #cards{
+    width:90%;
+    display:flex;
+    gap:2rem;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    margin:40px auto;
+  }
+}

@@ -24,7 +24,7 @@ body {
   position: fixed;
   top: 0;
   background-color: white;
-  height: auto;
+  height: 10%;
   display: flex;
   width: 100%;
   flex-grow: 0;
@@ -32,6 +32,7 @@ body {
   align-items: center;
   justify-content: space-between;
   transition: top 0.5s ease-in-out;
+  align-items: center;
 }
 
 .nav-logo {
@@ -89,14 +90,16 @@ body {
 
 
 .nav-left{
-  margin-top: 25px;
   margin-left: 20px;
-    height: 30%;
+    height: 100%;
     width: 20%;
+    display: flex;
+    align-items: center;
 }
 .logo{
-    object-fit: cover;
-    width:100%;
+    object-fit: contain;
+    height: 79px;
+    width: 103px;
 }
 
 .green{
@@ -296,4 +299,42 @@ body {
   outline: none;
   border: none;
   border-bottom: #376F7A solid 1px;
+}
+.navmenu{
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .menu-btn {
+    display: none;
+  }
+  .navmenu{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap:2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 10%;
+    
+  }
+  .navmenu .navlinks{
+    text-transform: uppercase;
+    color:black;
+  }
+  .navlinks :hover{
+    color:white
+  }
+  .navlinks a{
+    color:black;
+    font-weight: 500;
+  }
+  .nav{
+    background-color: rgba(137, 197, 204, 0.43);
+  }
+  .m-auto-nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
