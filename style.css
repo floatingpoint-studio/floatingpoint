@@ -9,6 +9,7 @@
 }
 
 body {
+  background-color: rgb(240, 250, 240);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,10 +22,8 @@ body {
 
 .nav{
   z-index: 10;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  height: 10%;
+  background-color: rgb(240, 250, 240);
+  /* height: 10%; */
   display: flex;
   width: 100%;
   flex-grow: 0;
@@ -44,6 +43,14 @@ body {
   margin: 20px 0px 10px 0px;
 }
 
+.navparent{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 6;
+  background-color: white;
+}
+
 .navbox{
   z-index: 6;
   display: flex;
@@ -54,7 +61,7 @@ body {
   top: -100%;
   height: auto;
   width: 100%;
-  background-color: #89c5cc;
+  background-color: rgb(208, 249, 208);
   transition: top 0.5s ease-in-out;
 }
 .navicons{
@@ -63,7 +70,7 @@ body {
 }
 
 .show{
-  top:7%;
+  top:9%;
   z-index: 7;
   transition: all 0.5s ease-in-out;
 }
@@ -79,6 +86,7 @@ body {
   line-height: 43px;
   list-style: none;
   padding:12px;
+  margin-top: 5px;
 }
 .navbuttons a{
   color: black;
@@ -97,13 +105,14 @@ body {
     align-items: center;
 }
 .logo{
+  /* margin-bottom: 10px; */
     object-fit: contain;
     height: 79px;
     width: 103px;
 }
 
 .green{
-  background-color: #89c5cc;
+  background-color: rgb(208, 249, 208);
   transition: all 0.5s ease-in-out;
 }
 .menu-btn {
@@ -234,7 +243,8 @@ body {
   margin: 30px auto;
   border-radius: 15px;
   font-family: 'Montserrat';
-  background-color: #89c5cc6e;
+  background: rgb(139,192,198);
+  background: linear-gradient(228deg, rgba(139,192,198,0.5861695019804797) 0%, rgba(162,106,190,0.36207986612613796) 100%);
   padding: 15px 0px;
 }
 
@@ -303,6 +313,8 @@ body {
 .navmenu{
   display: none;
 }
+
+
 @media only screen and (min-width: 600px) {
   .menu-btn {
     display: none;
@@ -327,14 +339,59 @@ body {
     color:black;
     font-weight: 500;
   }
+  
   .nav{
-    background-color: rgba(137, 197, 204, 0.43);
+    z-index: 7;
+    background-color: rgba(53, 201, 162, 0.416);
   }
+
   .m-auto-nav{
     width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .navparent{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+    background-color: white;
+  }
+
+  .maintext::before{
+    height: 70vh;
+  }
+
+  .text {
+    margin-top: 30%;
+  }
+
+  .round-container{
+    height: 50vh;
+  }
+
+  .m-auto-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .form-container .form .submit-btn{
+    width: 10vw;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo{
+    height: 37px;
+    margin: 10px 0;
   }
 }

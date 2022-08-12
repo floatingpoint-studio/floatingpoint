@@ -7,7 +7,8 @@
     align-items: center;
     /* justify-content: center; */
     border-radius: 16px;
-    background-color: #89c5cc6e;
+    /* background: rgb(139,192,198);
+    background: linear-gradient(228deg, rgba(139,192,198,0.5861695019804797) 0%, rgba(162,106,190,0.36207986612613796) 100%); */
     width: 90%;
     height: 15em;
     position: relative;
@@ -99,7 +100,7 @@
   width: 107px;
   height: 36px;
 
-  background: #69A1AC;
+  background: #376F7A;
   border-radius: 12px;
 
   font-family: 'Inter';
@@ -176,5 +177,15 @@
     /* flex-wrap: wrap; */
     flex-direction: row;
     margin:40px auto;
+    margin-top: 25vh;
   }
+}
+
+.bggrad{
+  background-color:hsla(118,100%,80%,0.51);
+  background-image:
+  radial-gradient(at 53% 47%, hsla(179,77%,77%,0.4) 0px, transparent 50%),
+  radial-gradient(at 94% 13%, hsla(195,91%,77%,0.49) 0px, transparent 50%),
+  radial-gradient(at 72% 91%, hsla(212,85%,79%,0.55) 0px, transparent 50%),
+  radial-gradient(at 24% 71%, hsla(193,93%,62%,0.47) 0px, transparent 50%);
 }

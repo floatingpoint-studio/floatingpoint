@@ -38,7 +38,7 @@ let str = ""
 
 data.forEach((item) => {
   str += `
-    <div class="infocontainer">
+    <div class="infocontainer bggrad">
       <div class="textholder">
           <h2 class="infoheading">${item.title}</h2>
           <div class="infodes">${item.desc}</div>
